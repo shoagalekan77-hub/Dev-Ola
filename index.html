@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asteris — Unisex Salon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Mulish:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <nav id="navbar">
+        <div class="nav-brand">
+            <span class="brand-icon">✂</span>
+            <div>
+                <span class="brand-name">ASTERIS</span>
+                <span class="brand-sub">Unisex Salon &amp; Spa</span>
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="#book" class="nav-cta">Make Appointment</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- MOBILE DRAWER -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+    <div class="mobile-drawer" id="mobileDrawer">
+        <button class="drawer-close" id="drawerClose">✕</button>
+        <div class="drawer-brand">✂ ASTERIS</div>
+        <ul>
+            <li><a href="#home" class="mob-link">Home</a></li>
+            <li><a href="#about" class="mob-link">About</a></li>
+            <li><a href="#services" class="mob-link">Services</a></li>
+            <li><a href="#gallery" class="mob-link">Gallery</a></li>
+            <li><a href="#contact" class="mob-link">Contact</a></li>
+            <li><a href="#book" class="mob-link mob-cta">Make Appointment</a></li>
+        </ul>
+    </div>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <p class="hero-eyebrow">It's Not Just a Haircut, It's an Experience.</p>
+            <h1>Where style meets<br><em>artistry &amp; care.</em></h1>
+            <p class="hero-desc">Lagos' premium unisex destination — crafted for everyone who values precision, beauty,
+                and a
+                flawless finish.</p>
+            <div class="hero-btns">
+                <a href="#book" class="btn-gold">Make An Appointment With Us</a>
+                <a href="#services" class="btn-outline-white">Our Services</a>
+            </div>
+        </div>
+        <div class="hero-scroll-hint">
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- TICKER -->
+    <div class="ticker">
+        <div class="ticker-track">
+            <span>Cuts &amp; Styling</span><span class="sep">✦</span>
+            <span>Colour &amp; Highlights</span><span class="sep">✦</span>
+            <span>Beard Grooming</span><span class="sep">✦</span>
+            <span>Nail Care</span><span class="sep">✦</span>
+            <span>Scalp Treatments</span><span class="sep">✦</span>
+            <span>Bridal Packages</span><span class="sep">✦</span>
+            <span>Cuts &amp; Styling</span><span class="sep">✦</span>
+            <span>Colour &amp; Highlights</span><span class="sep">✦</span>
+            <span>Beard Grooming</span><span class="sep">✦</span>
+            <span>Nail Care</span><span class="sep">✦</span>
+            <span>Scalp Treatments</span><span class="sep">✦</span>
+            <span>Bridal Packages</span><span class="sep">✦</span>
+        </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section id="about" class="about">
+        <div class="container about-grid">
+            <div class="about-visuals">
+                <div class="av-main"></div>
+                <div class="av-side">
+                    <div class="av-sm"></div>
+                    <div class="av-stat-card">
+                        <span class="sc-num" data-target="1300">0</span>
+                        <span class="sc-lbl">Happy Clients</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-body">
+                <span class="tag">About Asteris</span>
+                <h2>More than a salon.<br><em>A sanctuary.</em></h2>
+                <p>Asteris was born from a belief that great style has no gender. Our space is warm, welcoming, and
+                    designed to
+                    make every guest feel extraordinary the moment they arrive.</p>
+                <p>From master colourists to precision barbers, every stylist brings years of expertise and a passion
+                    for craft.
+                </p>
+                <img src="Pic1.jpg" alt="Asteris Salon Interior" height="300" width="200" />
+
+                <div class="about-stats">
+                    <div class="a-stat"><span data-target="8">0</span><small>Expert Stylists</small></div>
+                    <div class="a-stat"><span data-target="5">0</span><small>Years Excellence</small></div>
+                    <div class="a-stat"><span data-target="98">0</span><small>% Satisfaction</small></div>
+                </div>
+                <a href="#book" class="btn-gold">Book a Session</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-head">
+                <span class="tag">What We Offer</span>
+                <h2>Our <em>Services</em></h2>
+                <p>Premium treatments for every hair type, skin tone, and personal style.</p>
+            </div>
+            <div class="svc-grid">
+                <div class="svc-card" data-delay="0">
+                    <div class="svc-top"><span class="svc-icon">✂</span><span class="svc-num">01</span></div>
+                    <h3>Cuts &amp; Styling</h3>
+                    <p>Precision cuts tailored to your face shape and lifestyle.</p>
+                    <ul>
+                        <li><span>Classic Cut</span><span>₦5,000</span></li>
+                        <li><span>Designer Cut</span><span>₦8,000</span></li>
+                        <li><span>Blow Dry &amp; Style</span><span>₦4,000</span></li>
+                    </ul>
+                </div>
+                <div class="svc-card featured" data-delay="100">
+                    <div class="svc-top"><span class="svc-icon">◈</span><span class="svc-num">02</span></div>
+                    <div class="feat-badge">Most Popular</div>
+                    <h3>Colour &amp; Highlights</h3>
+                    <p>From subtle balayage to bold fashion colours.</p>
+                    <ul>
+                        <li><span>Full Colour</span><span>₦15,000</span></li>
+                        <li><span>Balayage</span><span>₦22,000</span></li>
+                        <li><span>Highlights</span><span>₦18,000</span></li>
+                    </ul>
+                </div>
+                <div class="svc-card" data-delay="200">
+                    <div class="svc-top"><span class="svc-icon">⚯</span><span class="svc-num">03</span></div>
+                    <h3>Beard &amp; Grooming</h3>
+                    <p>Hot-towel shaves and expert beard lining.</p>
+                    <ul>
+                        <li><span>Beard Trim</span><span>₦2,500</span></li>
+                        <li><span>Full Shave</span><span>₦4,000</span></li>
+                        <li><span>Beard Design</span><span>₦5,000</span></li>
+                    </ul>
+                </div>
+                <div class="svc-card" data-delay="300">
+                    <div class="svc-top"><span class="svc-icon">⬡</span><span class="svc-num">04</span></div>
+                    <h3>Hair Treatments</h3>
+                    <p>Deep conditioning, keratin, and scalp therapies.</p>
+                    <ul>
+                        <li><span>Deep Condition</span><span>₦6,000</span></li>
+                        <li><span>Keratin</span><span>₦35,000</span></li>
+                        <li><span>Scalp Therapy</span><span>₦8,000</span></li>
+                    </ul>
+                </div>
+                <div class="svc-card" data-delay="400">
+                    <div class="svc-top"><span class="svc-icon">◇</span><span class="svc-num">05</span></div>
+                    <h3>Nail Care</h3>
+                    <p>Manicures and pedicures using premium products.</p>
+                    <ul>
+                        <li><span>Classic Mani</span><span>₦4,000</span></li>
+                        <li><span>Gel Nails</span><span>₦7,500</span></li>
+                        <li><span>Spa Pedicure</span><span>₦6,000</span></li>
+                    </ul>
+                </div>
+                <div class="svc-card" data-delay="500">
+                    <div class="svc-top"><span class="svc-icon">⁕</span><span class="svc-num">06</span></div>
+                    <h3>Bridal &amp; Events</h3>
+                    <p>Glam packages for your most important days.</p>
+                    <ul>
+                        <li><span>Bridal Package</span><span>₦80,000</span></li>
+                        <li><span>Party Glam</span><span>₦25,000</span></li>
+                        <li><span>Group Booking</span><span>Custom</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FULL-WIDTH CTA BANNER -->
+    <section class="cta-banner">
+        <div class="cta-bg"></div>
+        <div class="cta-overlay"></div>
+        <div class="container cta-body">
+            <p>Ready for your transformation?</p>
+            <h2>Book your session <em>today.</em></h2>
+            <a href="#book" class="btn-gold">Make Appointment</a>
+        </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-head">
+                <span class="tag">Our Work</span>
+                <h2>The <em>Gallery</em></h2>
+                <p>Transformations we create every single day.</p>
+            </div>
+            <div class="gal-grid">
+                <div class="g-item tall" style="background:linear-gradient(135deg,#c9a96e,#7a5c30)">
+                    <div class="g-ov"><span>Colour Melt</span></div>
+                </div>
+                <div class="g-item" style="background:linear-gradient(135deg,#5c4a3a,#2c2218)">
+                    <div class="g-ov"><span>Classic Fade</span></div>
+                </div>
+                <div class="g-item" style="background:linear-gradient(135deg,#b08d57,#d4af7a)">
+                    <div class="g-ov"><span>Balayage</span></div>
+                </div>
+                <div class="g-item wide" style="background:linear-gradient(135deg,#7a6248,#4a3828)">
+                    <div class="g-ov"><span>Bridal Glam</span></div>
+                </div>
+                <div class="g-item" style="background:linear-gradient(135deg,#8b4513,#c67c3a)">
+                    <div class="g-ov"><span>Beard Art</span></div>
+                </div>
+                <div class="g-item tall" style="background:linear-gradient(135deg,#6b5a4e,#9a8c80)">
+                    <div class="g-ov"><span>Braids &amp; Twists</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BOOK -->
+    <section id="book" class="book">
+        <div class="container">
+            <div class="section-head">
+                <span class="tag">Appointments</span>
+                <h2>Book a <em>Session</em></h2>
+                <p>Reserve your chair — we'll take care of the rest.</p>
+            </div>
+            <form class="book-form" id="bookForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" placeholder="e.g. Amara Okonkwo" required />
+                    </div>
+                    <div class="form-group">
+                        <label>Phone Number</label>
+                        <input type="tel" placeholder="+234 800 000 0000" required />
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Service</label>
+                        <select required>
+                            <option value="" disabled selected>Select a service</option>
+                            <option>Cuts &amp; Styling</option>
+                            <option>Colour &amp; Highlights</option>
+                            <option>Beard &amp; Grooming</option>
+                            <option>Hair Treatments</option>
+                            <option>Nail Care</option>
+                            <option>Bridal &amp; Events</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Preferred Date</label>
+                        <input type="date" required />
+                    </div>
+                </div>
+                <div class="form-group full">
+                    <label>Additional Notes</label>
+                    <textarea rows="4" placeholder="Style references, allergies, special requests…"></textarea>
+                </div>
+                <button type="submit" class="btn-gold submit-btn">Confirm Booking ✦</button>
+            </form>
+            <div class="book-success" id="bookSuccess">
+                <div class="s-icon">✦</div>
+                <h3>You're all booked!</h3>
+                <p>We'll reach out to confirm your appointment. See you at Asteris!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+        <div class="container contact-grid">
+            <div class="contact-info">
+                <span class="tag">Find Us</span>
+                <h2>Come <em>Visit</em></h2>
+                <div class="c-item">
+                    <span class="c-lbl">Address</span>
+                    <span>14 Bode Thomas Street,<br>Surulere, Lagos, Nigeria</span>
+                </div>
+                <div class="c-item">
+                    <span class="c-lbl">Hours</span>
+                    <span>Mon – Sat: 8:00am – 8:00pm<br>Sunday: 10:00am – 5:00pm</span>
+                </div>
+                <div class="c-item">
+                    <span class="c-lbl">Phone</span>
+                    <span>+234 801 234 5678</span>
+                </div>
+                <div class="c-item">
+                    <span class="c-lbl">Email</span>
+                    <span>hello@asterissalon.com</span>
+                </div>
+                <div class="socials">
+                    <a href="#">Instagram</a>
+                    <a href="#">TikTok</a>
+                    <a href="#">WhatsApp</a>
+                </div>
+            </div>
+            <div class="contact-map">
+                <div class="map-box">
+                    <span class="map-pin">◉</span>
+                    <p>Surulere, Lagos</p>
+                    <small>Get Directions</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer-inner">
+            <div class="footer-brand">✂ ASTERIS</div>
+            <p>Crafted beauty for every soul — Lagos, Nigeria</p>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#book">Book</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <p class="footer-copy">© 2024 Asteris Unisex Salon. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
