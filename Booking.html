@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="Booking.css">
+</head>
+
+<body>
+    <section id="book" class="book">
+        <div class="container">
+            <div class="section-head">
+                <span class="tag">Appointments</span>
+                <h2>Book a <em>Session</em></h2>
+                <p>Reserve your chair — we'll take care of the rest.</p>
+            </div>
+            <form class="book-form" id="bookForm" action="Payment.html">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" placeholder="e.g. Amara Okonkwo" required />
+                    </div>
+                    <div class="form-group">
+                        <label>Phone Number</label>
+                        <input type="tel" placeholder="+234 800 000 0000" required />
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Service</label>
+                        <select required>
+                            <option value="" disabled selected>Select a service</option>
+                            <option>Cuts &amp; Styling</option>
+                            <option>Colour &amp; Highlights</option>
+                            <option>Beard &amp; Grooming</option>
+                            <option>Hair Treatments</option>
+                            <option>Nail Care</option>
+                            <option>Bridal &amp; Events</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Preferred Date</label>
+                        <input type="date" required />
+                    </div>
+                </div>
+                <div class="form-group full">
+                    <label>Additional Notes</label>
+                    <textarea rows="4" placeholder="Style references, allergies, special requests…"></textarea>
+                </div>
+                <button type="submit" class="btn-gold submit-btn">Confirm Booking ✦</button>
+            </form>
+
+        </div>
+    </section>
+
+</body>
+
+</html>

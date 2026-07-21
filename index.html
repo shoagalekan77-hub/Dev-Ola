@@ -30,7 +30,9 @@
             <li><a href="#gallery">Gallery</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-        <a href="#book" class="nav-cta">Make Appointment</a>
+        <a href="booking.html" class="nav-btn">
+            Make Appointment</a>
+
         <button class="hamburger" id="hamburger" aria-label="Toggle menu">
             <span></span><span></span><span></span>
         </button>
@@ -47,7 +49,7 @@
             <li><a href="#services" class="mob-link">Services</a></li>
             <li><a href="#gallery" class="mob-link">Gallery</a></li>
             <li><a href="#contact" class="mob-link">Contact</a></li>
-            <li><a href="#book" class="mob-link mob-cta">Make Appointment</a></li>
+            <li><a href="booking.html" class="mob-link">Make Appointment</a></li>
         </ul>
     </div>
 
@@ -55,6 +57,7 @@
     <section id="home" class="hero">
         <div class="hero-bg"></div>
         <div class="hero-overlay"></div>
+        <img src="Pics3.jpeg" alt="Asteris Salon Interior" class="hero-img" />
         <div class="container hero-content">
             <p class="hero-eyebrow">It's Not Just a Haircut, It's an Experience.</p>
             <h1>Where style meets<br><em>artistry &amp; care.</em></h1>
@@ -93,9 +96,14 @@
     <section id="about" class="about">
         <div class="container about-grid">
             <div class="about-visuals">
-                <div class="av-main"></div>
+                <div class="av-main">
+                    <img src="Pic1.jpg" alt="Asteris Salon Interior" height="500" width="368" />
+                </div>
                 <div class="av-side">
-                    <div class="av-sm"></div>
+                    <div class="av-sm">
+                        <img src="Pics4.jpeg" alt="Asteris Salon Interior" height="239" width="252" />
+
+                    </div>
                     <div class="av-stat-card">
                         <span class="sc-num" data-target="1300">0</span>
                         <span class="sc-lbl">Happy Clients</span>
@@ -111,7 +119,8 @@
                 <p>From master colourists to precision barbers, every stylist brings years of expertise and a passion
                     for craft.
                 </p>
-                <img src="Pic1.jpg" alt="Asteris Salon Interior" height="300" width="200" />
+                <img src="Pics2.jpeg" alt="Asteris Salon Interior" height="400" width="320" />
+
 
                 <div class="about-stats">
                     <div class="a-stat"><span data-target="8">0</span><small>Expert Stylists</small></div>
@@ -197,17 +206,6 @@
         </div>
     </section>
 
-    <!-- FULL-WIDTH CTA BANNER -->
-    <section class="cta-banner">
-        <div class="cta-bg"></div>
-        <div class="cta-overlay"></div>
-        <div class="container cta-body">
-            <p>Ready for your transformation?</p>
-            <h2>Book your session <em>today.</em></h2>
-            <a href="#book" class="btn-gold">Make Appointment</a>
-        </div>
-    </section>
-
     <!-- GALLERY -->
     <section id="gallery" class="gallery">
         <div class="container">
@@ -216,79 +214,40 @@
                 <h2>The <em>Gallery</em></h2>
                 <p>Transformations we create every single day.</p>
             </div>
+
             <div class="gal-grid">
-                <div class="g-item tall" style="background:linear-gradient(135deg,#c9a96e,#7a5c30)">
-                    <div class="g-ov"><span>Colour Melt</span></div>
+
+                <div class="g-item">
+                    <img src="Pics5.jpeg" alt="Haircut">
                 </div>
-                <div class="g-item" style="background:linear-gradient(135deg,#5c4a3a,#2c2218)">
-                    <div class="g-ov"><span>Classic Fade</span></div>
+
+                <div class="g-item">
+                    <img src="Pics6.jpeg" alt="Braids">
                 </div>
-                <div class="g-item" style="background:linear-gradient(135deg,#b08d57,#d4af7a)">
-                    <div class="g-ov"><span>Balayage</span></div>
+
+                <div class="g-item">
+                    <img src="Pics7.jpeg" alt="Salon">
                 </div>
-                <div class="g-item wide" style="background:linear-gradient(135deg,#7a6248,#4a3828)">
-                    <div class="g-ov"><span>Bridal Glam</span></div>
+
+                <div class="g-item">
+                    <img src="pics8.jpeg" alt="Salon">
                 </div>
-                <div class="g-item" style="background:linear-gradient(135deg,#8b4513,#c67c3a)">
-                    <div class="g-ov"><span>Beard Art</span></div>
+
+                <div class="g-item">
+                    <img src="pics9.jpeg" alt="Salon">
                 </div>
-                <div class="g-item tall" style="background:linear-gradient(135deg,#6b5a4e,#9a8c80)">
-                    <div class="g-ov"><span>Braids &amp; Twists</span></div>
+                <div class="g-item">
+                    <img src="pics10.jpeg" alt="Salon">
                 </div>
+
+
+
+
             </div>
         </div>
     </section>
 
-    <!-- BOOK -->
-    <section id="book" class="book">
-        <div class="container">
-            <div class="section-head">
-                <span class="tag">Appointments</span>
-                <h2>Book a <em>Session</em></h2>
-                <p>Reserve your chair — we'll take care of the rest.</p>
-            </div>
-            <form class="book-form" id="bookForm">
-                <div class="form-row">
-                    <div class="form-group">
-                        <label>Full Name</label>
-                        <input type="text" placeholder="e.g. Amara Okonkwo" required />
-                    </div>
-                    <div class="form-group">
-                        <label>Phone Number</label>
-                        <input type="tel" placeholder="+234 800 000 0000" required />
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group">
-                        <label>Service</label>
-                        <select required>
-                            <option value="" disabled selected>Select a service</option>
-                            <option>Cuts &amp; Styling</option>
-                            <option>Colour &amp; Highlights</option>
-                            <option>Beard &amp; Grooming</option>
-                            <option>Hair Treatments</option>
-                            <option>Nail Care</option>
-                            <option>Bridal &amp; Events</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label>Preferred Date</label>
-                        <input type="date" required />
-                    </div>
-                </div>
-                <div class="form-group full">
-                    <label>Additional Notes</label>
-                    <textarea rows="4" placeholder="Style references, allergies, special requests…"></textarea>
-                </div>
-                <button type="submit" class="btn-gold submit-btn">Confirm Booking ✦</button>
-            </form>
-            <div class="book-success" id="bookSuccess">
-                <div class="s-icon">✦</div>
-                <h3>You're all booked!</h3>
-                <p>We'll reach out to confirm your appointment. See you at Asteris!</p>
-            </div>
-        </div>
-    </section>
+
 
     <!-- CONTACT -->
     <section id="contact" class="contact">
@@ -298,35 +257,37 @@
                 <h2>Come <em>Visit</em></h2>
                 <div class="c-item">
                     <span class="c-lbl">Address</span>
-                    <span>14 Bode Thomas Street,<br>Surulere, Lagos, Nigeria</span>
+                    <span>Ladi-Lak Bariga, Lagos, Nigeria</span>
                 </div>
                 <div class="c-item">
                     <span class="c-lbl">Hours</span>
-                    <span>Mon – Sat: 8:00am – 8:00pm<br>Sunday: 10:00am – 5:00pm</span>
+                    <span>Mon – Sat: 8:00am – 10:00pm<br>Sunday: 10:00am – 9:00pm</span>
                 </div>
                 <div class="c-item">
                     <span class="c-lbl">Phone</span>
-                    <span>+234 801 234 5678</span>
+                    <span>+234 9079801479</span>
                 </div>
                 <div class="c-item">
                     <span class="c-lbl">Email</span>
                     <span>hello@asterissalon.com</span>
                 </div>
                 <div class="socials">
-                    <a href="#">Instagram</a>
-                    <a href="#">TikTok</a>
-                    <a href="#">WhatsApp</a>
+                    <a
+                        href="https://www.instagram.com/asteris_barber?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Instagram</a>
+                    <a href="https://www.tiktok.com/@asteris_barber">TikTok</a>
+                    <a href="https://wa.me/2349079801479">WhatsApp</a>
                 </div>
             </div>
             <div class="contact-map">
                 <div class="map-box">
                     <span class="map-pin">◉</span>
-                    <p>Surulere, Lagos</p>
-                    <small>Get Directions</small>
+                    <p>Ladi-Lak Bariga,Lagos</p>
+                    <small><a href="https://www.google.com/maps/dir/?api=1&destination=Ladi-Lak+Bariga%2C+Lagos" target="_blank">Get Directions</a></small>
                 </div>
             </div>
         </div>
     </section>
+
 
     <!-- FOOTER -->
     <footer>
@@ -342,6 +303,10 @@
             </div>
             <p class="footer-copy">© 2024 Asteris Unisex Salon. All rights reserved.</p>
         </div>
-    </footer>
 
-    <script src="script.js"></script>
+    </footer>
+    <button id="backToTop" title="Back to Top">
+        ↑
+    </button>
+</body>
+<script src="script.js"></script>
