@@ -16,12 +16,19 @@
                 <h2>Book a <em>Session</em></h2>
                 <p>Reserve your chair — we'll take care of the rest.</p>
             </div>
-            <form class="book-form" id="bookForm" action="Payment.html">
+            <form class="book-form" id="bookForm">
+
                 <div class="form-row">
                     <div class="form-group">
                         <label>Full Name</label>
                         <input type="text" placeholder="e.g. Amara Okonkwo" required />
                     </div>
+
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="email" placeholder="e.g. amara@okonkwo.com" id="email" required>
+                    </div>
+
                     <div class="form-group">
                         <label>Phone Number</label>
                         <input type="tel" placeholder="+234 800 000 0000" required />
@@ -30,13 +37,15 @@
                 <div class="form-row">
                     <div class="form-group">
                         <label>Service</label>
-                        <select required>
+                        <select id="service" required>
                             <option value="" disabled selected>Select a service</option>
                             <option>Cuts &amp; Styling</option>
                             <option>Colour &amp; Highlights</option>
                             <option>Beard &amp; Grooming</option>
                             <option>Hair Treatments</option>
                             <option>Nail Care</option>
+                            <option>Manicure</option>
+                            <option>Pedicure</option>
                             <option>Bridal &amp; Events</option>
                         </select>
                     </div>
@@ -49,12 +58,15 @@
                     <label>Additional Notes</label>
                     <textarea rows="4" placeholder="Style references, allergies, special requests…"></textarea>
                 </div>
-                <button type="submit" class="btn-gold submit-btn">Confirm Booking ✦</button>
+                <button type="button" id="payBtn" class="submit-btn">
+                    Confirm Booking
+                </button>
             </form>
 
         </div>
     </section>
-
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+    <script src="booking.js"></script>
 </body>
 
 </html>

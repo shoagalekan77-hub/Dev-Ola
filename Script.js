@@ -87,21 +87,7 @@ window.addEventListener('scroll', () => {
   });
 }, { passive: true });
 
-// ===== BOOKING FORM =====
-const bookForm = document.getElementById('bookForm');
-const bookSuccess = document.getElementById('bookSuccess');
-if (bookForm) {
-  bookForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    bookForm.style.transition = 'opacity 0.4s, transform 0.4s';
-    bookForm.style.opacity = '0';
-    bookForm.style.transform = 'translateY(-10px)';
-    setTimeout(() => {
-      bookForm.style.display = 'none';
-      bookSuccess.classList.add('show');
-    }, 400);
-  });
-}
+
 
 // ===== GALLERY HOVER SUBTLE LIFT =====
 document.querySelectorAll('.g-item').forEach(item => {
@@ -166,3 +152,38 @@ backToTop.addEventListener("click", () => {
     behavior: "smooth"
   });
 });
+
+const payBtn = document.getElementById("payBtn");
+
+if (payBtn) {
+  payBtn.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    const email = document.getElementById("email").value;
+
+    if (!email) {
+      alert("Please enter your email.");
+      return;
+    }
+
+    let handler = PaystackPop.setup({
+      key: "pk_test_bb92d9c88474632fd9134917462df086681a999e", // Replace with your public key
+      email: email,
+      amount: 1000000, // ₦10,000
+      currency: "NGN",
+      ref: "BOOK_" + Date.now(),
+
+      callback: function (response) {
+        alert("Payment Successful!");
+        window.location.href = "success.html";
+      },
+
+      onClose: function () {
+        alert("Payment cancelled.");
+      }
+    });
+
+    handler.openIframe();
+  });
+}
+console.log("Script loaded!");
